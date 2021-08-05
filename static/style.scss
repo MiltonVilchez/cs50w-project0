@@ -1,4 +1,6 @@
-$color: black;
+$fondo: black;
+$diseño: #5e17eb;
+$sombra: hotpink;
 
 body
 {
@@ -9,23 +11,24 @@ body
 
 .mynav
 {
-    background-color: $color;
+    background-color: $fondo;
     position: 0px;
     margin-top: 0px;
 }
 
 .botoncolor
 {
-    color: #5e17eb;  
+    color: $diseño;  
     text-align: center;
 }
 
 .botoncolor:hover{
-    color: hotpink;    
+    color: $sombra;    
 }
 
-.indice
+.indice ul
 {
+    list-style-type: none;
     padding: 1rem;
     margin: 0.5rem;
     width: 20rem;
@@ -33,17 +36,17 @@ body
 
 .indice a
 {
-    background: $color;
+    background: $fondo;
     border-style: solid;
     border-width: 2px;
-    border-color:#5e17eb;
+    border-color: $diseño;
     color:white;
 }
 
 .indice a:hover
 {
-    color: hotpink;
-    background: $color;
+    color: $sombra;
+    background: #151414;
 }
 
 h4
@@ -53,9 +56,9 @@ h4
 }
 
 .section{
-    background: black;
+    background: $fondo;
     border-style: solid;
-    border-color: #5e17eb;
+    border-color: $diseño;
     border-width: 2px;
     color: white;
     margin: 0.5rem;
@@ -65,7 +68,7 @@ h4
 
 .section div a:hover
 {
-    color: hotpink;
+    color: $sombra;
 }
 
 .section p 
@@ -90,9 +93,9 @@ footer
     margin: 0.5rem;
     border-style: solid;
     border-width: 2px;
-    border-color:#5e17eb;
+    border-color: $diseño;
     border-radius: 5px;
-    background: black;
+    background: $fondo;
     padding: 0.5rem;
     text-align: center;
 }
@@ -105,7 +108,7 @@ footer p
 
 footer p a:hover
 {
-    color:hotpink;
+    color: $sombra;
 }
 
 #historysection
@@ -123,8 +126,8 @@ footer p a:hover
 
 .columna 
 {
-    background: black;
-    border-color: #5e17eb;
+    background: $fondo;
+    border-color: $diseño;
     border-width: 2px;
     border-style:groove;
     border-radius: 10px;    
@@ -140,21 +143,21 @@ footer p a:hover
 .Inicio a
 {
     margin: 0;
-    color: #5e17eb;
+    color: $diseño;
 }
 
 .Inicio a:hover
 {
-    color: hotpink;
+    color: $sombra;
 }
 
 .historysection
 {
     margin: 2rem;
-    background:black;
+    background: $fondo;
     color:white;
     border-style: solid;
     border-width: 2px;
-    border-color: #5e17eb;
+    border-color: $diseño;
     border-radius: 10px;
 }
