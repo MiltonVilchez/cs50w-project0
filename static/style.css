@@ -1,3 +1,17 @@
+body h4 {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
+.indice a, .section, footer, .historysection {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -31,7 +45,6 @@ body {
   border-style: solid;
   border-width: 2px;
   border-color: #5e17eb;
-  color: white;
 }
 
 .indice a:hover {
@@ -50,7 +63,6 @@ h4 {
   border-style: solid;
   border-color: #5e17eb;
   border-width: 2px;
-  color: white;
   margin: 0.5rem;
   border-radius: 10px;
   margin-bottom: 2rem;
@@ -75,7 +87,6 @@ h4 {
 }
 
 footer {
-  color: white;
   margin: 0.5rem;
   border-style: solid;
   border-width: 2px;
@@ -132,9 +143,34 @@ footer p a:hover {
 .historysection {
   margin: 2rem;
   background: black;
-  color: white;
   border-style: solid;
   border-width: 2px;
   border-color: #5e17eb;
   border-radius: 10px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*.tabla
+{
+    margin: 2rem;
+    background: blue;
+    td.img
+    {
+        padding: 2rem;
+    }
+}*/
+@media all and (max-width: 992px) {
+  body {
+    background-image: url("/static/images/GatoMolesto.jpg");
+    background-repeat: round;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-height: 360px) {
+  body {
+    background-image: url("/static/images/GatoMolesto2.jpg");
+    background-repeat: round;
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=style.css.map */

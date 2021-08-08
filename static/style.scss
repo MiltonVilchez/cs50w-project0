@@ -2,6 +2,20 @@ $fondo: black;
 $diseño: #5e17eb;
 $sombra: hotpink;
 
+%Titulos
+{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration-line:underline;
+    text-decoration-style:wavy;
+}
+
+%Parrafos
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body
 {
     margin: 0px;
@@ -9,6 +23,10 @@ body
     background-image: url("images/FondoSitioWeb.png");
 }
 
+body h4
+{
+    @extend %Titulos
+}
 .mynav
 {
     background-color: $fondo;
@@ -40,7 +58,7 @@ body
     border-style: solid;
     border-width: 2px;
     border-color: $diseño;
-    color:white;
+    @extend %Parrafos;
 }
 
 .indice a:hover
@@ -56,11 +74,11 @@ h4
 }
 
 .section{
+    @extend %Parrafos;
     background: $fondo;
     border-style: solid;
     border-color: $diseño;
     border-width: 2px;
-    color: white;
     margin: 0.5rem;
     border-radius: 10px;
     margin-bottom: 2rem;
@@ -89,7 +107,7 @@ h4
 
 footer
 {
-    color:white;
+    @extend %Parrafos;
     margin: 0.5rem;
     border-style: solid;
     border-width: 2px;
@@ -155,9 +173,38 @@ footer p a:hover
 {
     margin: 2rem;
     background: $fondo;
-    color:white;
+    @extend %Parrafos;
     border-style: solid;
     border-width: 2px;
     border-color: $diseño;
     border-radius: 10px;
+}
+
+/*.tabla
+{
+    margin: 2rem;
+    background: blue;
+    td.img
+    {
+        padding: 2rem;
+    }
+}*/
+
+@media all and (max-width: 992px)
+{
+    body
+    {
+        background-image: url("/static/images/GatoMolesto.jpg");
+        background-repeat:round;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-height: 360px)
+{
+    body{
+        background-image: url("/static/images/GatoMolesto2.jpg");
+        background-repeat:round;
+        visibility: hidden;
+    }
 }
